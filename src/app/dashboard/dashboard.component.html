@@ -1,10 +1,23 @@
-<h3>Top Heroes</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let hero of heroes" class="col-1-4"
-      routerLink="/detail/{{hero.id}}">
+<h2>Top Heroes</h2>
+<!--<div class="grid">
+  <a *ngFor="let hero of heroes" class="col-1-4">
+    routerLink="/detail/{{hero.id}}">
     <div class="module hero">
       <h4>{{hero.name}}</h4>
     </div>
   </a>
 </div>
+-->
+
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile *ngFor="let hero of heroes">
+    {{hero.name}}
+    <div class="button">
+      <button mat-button color="primary" routerLink="/detail/{{hero.id}}">More</button>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<br>
+
 <app-hero-search></app-hero-search>
