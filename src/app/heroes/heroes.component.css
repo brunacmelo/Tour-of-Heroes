@@ -6,6 +6,9 @@ h2{
   color: #ff66a3;
   margin-bottom: 15px;
 }
+mat-list-item {
+  align-items: center;
+}
 /*.heroes {
   margin: 0 0 2em 0;
   list-style-type: none;

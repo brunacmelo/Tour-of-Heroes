@@ -7,10 +7,14 @@ h1 {
   color: indigo;
   text-align: center;
 }
-
+a {
+  color: white;
+  text-align: center;
+}
 .menu {
   text-align: left;
 }
+
 /*
 h2 {
   font-size: 2em;

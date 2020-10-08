@@ -11,7 +11,8 @@
   </div>
 
 -->
-<div class="cards">
+
+<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
   <mat-card *ngIf="hero">
     <mat-card-header>
       <mat-card-title>{{hero.name | uppercase}}</mat-card-title>
@@ -20,12 +21,11 @@
 
     <mat-card-content>
       <span>id: </span>{{hero.id}} 
-    
-      <div>
-        <mat-label>name:
-          <input matInput [(ngModel)]="hero.name" placeholder="name" />
-        </mat-label>
-      </div>
+      <br />
+      <mat-label>name:
+        <input matInput [(ngModel)]="hero.name" placeholder="name" />
+      </mat-label>
+      
     </mat-card-content>
 
     <mat-card-actions>

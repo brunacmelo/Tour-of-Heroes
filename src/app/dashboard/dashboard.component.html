@@ -7,7 +7,6 @@
     </div>
   </a>
 </div>
--->
 
 <mat-grid-list cols="4" rowHeight="100px">
   <mat-grid-tile *ngFor="let hero of heroes">
@@ -17,7 +16,16 @@
     </div>
   </mat-grid-tile>
 </mat-grid-list>
+-->
 
-<br>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="30" fxFlex.xs="40" *ngFor="let hero of heroes" class="col-1-4 top">
+    {{hero.name}}
+    <div class="button">
+      <button mat-button color="primary" routerLink="/detail/{{hero.id}}">More</button>
+    </div>
+  </div>  
+</div>
+<br />
 
 <app-hero-search></app-hero-search>

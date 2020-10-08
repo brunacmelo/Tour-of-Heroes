@@ -24,6 +24,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -40,6 +42,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatInputModule,
     MatGridListModule,
     MatMenuModule,
+    MatToolbarModule,
+    FlexLayoutModule,
   ],
 
   declarations: [

@@ -27,12 +27,12 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
-}*/
+}.cards{
+  justify-content: center;
+  align-items: center;
+}
+*/
 mat-card{
   width: 500px;
 
-}
-.cards{
-  justify-content: center;
-  align-items: center;
 }

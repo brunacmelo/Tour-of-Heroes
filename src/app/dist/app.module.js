@@ -28,6 +28,8 @@ var form_field_1 = require("@angular/material/form-field");
 var input_1 = require("@angular/material/input");
 var grid_list_1 = require("@angular/material/grid-list");
 var menu_1 = require("@angular/material/menu");
+var toolbar_1 = require("@angular/material/toolbar");
+var flex_layout_1 = require("@angular/flex-layout");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -47,6 +49,8 @@ var AppModule = /** @class */ (function () {
                 input_1.MatInputModule,
                 grid_list_1.MatGridListModule,
                 menu_1.MatMenuModule,
+                toolbar_1.MatToolbarModule,
+                flex_layout_1.FlexLayoutModule,
             ],
             declarations: [
                 app_component_1.AppComponent,
