@@ -1,6 +1,6 @@
 <h2>My Heroes</h2>
 <mat-nav-list fxLayout="column" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="space-between center">
-   <mat-list-item fxFlex="30" fxFlexAlign="center" *ngFor="let hero of heroes">
+   <mat-list-item fxFlex fxFlexAlign="center" *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
       <span class="iden">{{hero.id}}</span> {{hero.name}} 
     </a>
