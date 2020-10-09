@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
@@ -12,6 +12,10 @@ export class DashboardComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
+  @Input() hero: Hero;
+
+  @Output() selected = new EventEmitter<Hero>();
+  click() { this.selected.emit(this.hero); }
   ngOnInit() {
     this.getHeroes();
   }
