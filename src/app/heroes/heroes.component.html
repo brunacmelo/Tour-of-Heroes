@@ -12,6 +12,12 @@
   <mat-form-field appearance="fill">
     <mat-label>Hero name:</mat-label>
       <input matInput #heroName/>
+    
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+  <mat-label>Hero powers:</mat-label>
+      <input matInput #heroPower/>
   </mat-form-field>
   <!--<label>
     <input #heroName />
@@ -19,7 +25,7 @@
 -->
   <!-- (click) passes input value to add() and then clears the input -->
   <span>
-    <button mat-raised-button color="accent" (click)="add(heroName.value); heroName.value=''">
+    <button mat-raised-button color="accent" (click)="add(heroName.value, heroPower.value); heroName.value=''">
       add
     </button>
   </span>
